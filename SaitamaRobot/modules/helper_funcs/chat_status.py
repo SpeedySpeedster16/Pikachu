@@ -111,8 +111,7 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "This is a developer restricted command."
-                " You do not have permissions to run this.")
+                ".")
 
     return is_dev_plus_func
 
@@ -137,7 +136,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "You can't use this")
 
     return is_sudo_plus_func
 
@@ -175,7 +174,7 @@ def whitelist_plus(func):
             return func(update, context, *args, **kwargs)
         else:
             update.effective_message.reply_text(
-                f"You don't have access to use this.\nVisit @{SUPPORT_CHAT}")
+                f"You don't have access to use this.\nVisit @pikachu_support")
 
     return is_whitelist_plus_func
 
@@ -199,7 +198,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "You can't use this")
 
     return is_admin
 
@@ -252,9 +251,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin! - REEEEEE"
+            not_admin = "I'm not admin! - 😒"
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
+            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - 😒"
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
