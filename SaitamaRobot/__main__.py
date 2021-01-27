@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="❣Support Group❣",
-                             url=f"https://t.me/{pikachu_support}"),
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🤖Updates Channel🤖",
                              url="https://t.me/pikachu_updates")
