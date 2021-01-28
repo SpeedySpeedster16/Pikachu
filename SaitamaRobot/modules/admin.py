@@ -88,7 +88,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>!",
+        f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>. Now Give Party🥳🥳!",
         parse_mode=ParseMode.HTML)
 
     log_message = (
@@ -455,7 +455,6 @@ def adminlist(update, context):
 
 __help__ = """
  • `/admins`*:* list of admins in the chat
-
 *Admins only:*
  • `/pin`*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
  • `/unpin`*:* unpins the currently pinned message
@@ -464,6 +463,7 @@ __help__ = """
  • `/demote`*:* demotes the user replied to
  • `/title <title here>`*:* sets a custom title for an admin that the bot promoted
  • `/admincache`*:* force refresh the admins list
+ • `/zombies`*:* find deleted accounts in group
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
