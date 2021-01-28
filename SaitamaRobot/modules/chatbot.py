@@ -114,7 +114,7 @@ def chatbot(update: Update, context: CallbackContext):
         except CFError as e:
             pass
             #bot.send_message(OWNER_ID,
-            #                 f"Chatbot error: {e} occurred in {chat_id}!")
+                             #f"Chatbot error: {e} occurred in {chat_id}!")
 
 
 @run_async
@@ -136,7 +136,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows Pikachu to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 *Admins only:*
