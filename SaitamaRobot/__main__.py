@@ -214,6 +214,9 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
+                             text="✳Logs✳",
+                             url="https://t.me/pikachu_logs")
+                         InlineKeyboardButton(
                              text="🖨Source code🖨",
                              url="https://github.com/thelegend-16/Pikachu")
                      ]]))
