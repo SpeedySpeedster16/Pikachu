@@ -11,7 +11,7 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-GIF_ID = 'https://telegra.ph/file/c19ac7ce1f7c40c680ef1.mp4'
+GIF_ID = 'http://telegra.ph/file/c19ac7ce1f7c40c680ef1.mp4'
 
 
 @run_async
